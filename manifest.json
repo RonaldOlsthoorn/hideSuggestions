@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+  
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.nl/*"],
+      "js": ["hideSuggestions.js"]
+    }
+  ]
+}
